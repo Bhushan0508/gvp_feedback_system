@@ -1,0 +1,49 @@
+{
+  "departments": [
+    {
+      "code": "global_pagoda",
+      "name": "Global Pagoda",
+      "description": "Main meditation and spiritual center",
+      "email_recipients": [
+        "head@globalpagoda.org",
+        "feedback@globalpagoda.org"
+      ]
+    },
+    {
+      "code": "souvenir_store",
+      "name": "Souvenir Store",
+      "description": "Spiritual books and merchandise",
+      "email_recipients": [
+        "store@globalpagoda.org",
+        "manager@souvenirstore.org"
+      ]
+    },
+    {
+      "code": "dpvc",
+      "name": "DPVC - Dhamma Pattana Vipassana Centre",
+      "description": "Vipassana meditation courses",
+      "email_recipients": [
+        "admin@dpvc.org",
+        "coordinator@dpvc.org"
+      ]
+    },
+    {
+      "code": "dhammalaya",
+      "name": "Dhammalaya",
+      "description": "Meditation and study facility",
+      "email_recipients": [
+        "contact@dhammalaya.org",
+        "director@dhammalaya.org"
+      ]
+    },
+    {
+      "code": "food_court",
+      "name": "Food Court",
+      "description": "Dining and refreshments",
+      "email_recipients": [
+        "foodcourt@globalpagoda.org",
+        "foodmanager@globalpagoda.org"
+      ]
+    }
+  ]
+}
