@@ -24,6 +24,10 @@ echo "📥 [2/5] Installing Docker Engine (Official Script)..."
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 
+echo "🔌 Ensure Docker Service is running..."
+sudo systemctl enable docker || true
+sudo systemctl start docker || sudo service docker start || true
+
 echo ""
 echo "👤 [3/5] Configuring Non-Sudo Access..."
 # Create docker group if it doesn't exist
