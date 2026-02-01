@@ -44,10 +44,37 @@ elif [ -x "$(command -v yum)" ]; then
 fi
 
 echo ""
-echo "🔐 [5/5] Generating Certificates..."
+echo "🐳 [4.5/6] Installing 'docker-compose' compatibility..."
+# Install standalone docker-compose binary so "docker-compose" command works
+sudo curl -SL https://github.com/docker/compose/releases/download/v2.24.5/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+# Create symbolic link just in case
+sudo ln -sf /usr/local/bin/docker-compose /usr/bin/docker-compose
+
+echo ""
+echo "🔐 [5/6] Generating Certificates..."
 # Ensure script is executable
 chmod +x ./scripts/generate-certs.sh
 ./scripts/generate-certs.sh
+
+echo ""
+echo "📝 [6/6] Configuring Environment (.env)..."
+if [ ! -f .env ]; then
+    echo "   Creating .env from .env.example..."
+    cp .env.example .env
+    
+    # Generate random passwords
+    MONGO_PASS=$(openssl rand -base64 16)
+    JWT_SEC=$(openssl rand -base64 32)
+    
+    # Update .env with sed (works on Linux)
+    sed -i "s/CHANGE_ME_STRONG_PASSWORD_HERE/$MONGO_PASS/" .env
+    sed -i "s/CHANGE_ME_RANDOM_STRING_MIN_32_CHARACTERS_LONG/$JWT_SEC/" .env
+    
+    echo "   ✅ .env created with generated secure passwords."
+else
+    echo "   ✅ .env already exists. Skipping."
+fi
 
 echo ""
 echo "🎉 SETUP COMPLETE!"
