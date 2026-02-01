@@ -1,0 +1,53 @@
+╔═══════════════════════════════════════════════════════════════╗
+║                                                               ║
+║           FEEDBACK SYSTEM - LOCAL NETWORK SETUP               ║
+║                                                               ║
+╚═══════════════════════════════════════════════════════════════╝
+
+QUICK START:
+-----------
+
+Run this command to fix and start everything:
+
+    sudo ./scripts/fix-ports-and-start.sh
+
+
+WHAT THIS DOES:
+---------------
+1. Stops Caddy server (which is blocking port 80)
+2. Rebuilds the frontend container (fixed nginx configuration)
+3. Starts all Docker containers
+4. Shows you the status
+
+
+AFTER STARTING:
+---------------
+Access from any device on your network:
+
+    https://feedback.local
+
+Or use direct IP:
+
+    https://172.12.0.28
+
+
+FIRST TIME BROWSER ACCESS:
+--------------------------
+You'll see a security warning (self-signed certificate).
+Click: "Advanced" → "Proceed to feedback.local"
+
+
+TROUBLESHOOTING:
+----------------
+If the quick start doesn't work, see: FIX_AND_START.md
+
+
+VERIFY SETUP:
+-------------
+After starting, run:
+
+    ./scripts/verify-network.sh
+
+╔═══════════════════════════════════════════════════════════════╗
+║  For detailed documentation, see: LOCAL_NETWORK_GUIDE.md     ║
+╚═══════════════════════════════════════════════════════════════╝

@@ -29,8 +29,8 @@ COPY nginx.conf /etc/nginx/conf.d/
 # Copy built Flutter web app from builder stage
 COPY --from=builder /app/build/web /usr/share/nginx/html
 
-# Expose port 80
-EXPOSE 80
+# Expose ports 80 (HTTP) and 443 (HTTPS)
+EXPOSE 80 443
 
 # Health check
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
