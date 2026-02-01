@@ -5,7 +5,7 @@
       "name": "Global Pagoda",
       "description": "Main meditation and spiritual center",
       "email_recipients": [
-        "head@globalpagoda.org",
+        "tod@vridhamma.org",
         "feedback@globalpagoda.org"
       ]
     },
@@ -14,8 +14,8 @@
       "name": "Souvenir Store",
       "description": "Spiritual books and merchandise",
       "email_recipients": [
-        "store@globalpagoda.org",
-        "manager@souvenirstore.org"
+        "tod@vridhamma.org",
+        "feedback@globalpagoda.org"
       ]
     },
     {
@@ -23,8 +23,8 @@
       "name": "DPVC - Dhamma Pattana Vipassana Centre",
       "description": "Vipassana meditation courses",
       "email_recipients": [
-        "admin@dpvc.org",
-        "coordinator@dpvc.org"
+        "tod@vridhamma.org",
+        "feedback@globalpagoda.org"
       ]
     },
     {
@@ -32,8 +32,8 @@
       "name": "Dhammalaya",
       "description": "Meditation and study facility",
       "email_recipients": [
-        "contact@dhammalaya.org",
-        "director@dhammalaya.org"
+        "tod@vridhamma.org",
+        "feedback@globalpagoda.org"
       ]
     },
     {
@@ -41,8 +41,8 @@
       "name": "Food Court",
       "description": "Dining and refreshments",
       "email_recipients": [
-        "foodcourt@globalpagoda.org",
-        "foodmanager@globalpagoda.org"
+        "tod@vridhamma.org",
+        "feedback@globalpagoda.org"
       ]
     }
   ]

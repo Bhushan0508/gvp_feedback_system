@@ -3,14 +3,35 @@
     {
       "code": "global_pagoda",
       "name": "Global Pagoda",
+      "description": "Main meditation and spiritual center",
+      "tablet_config": {
+        "primary_color": "#3498db",
+        "welcome_message": "Thank you for visiting Global Vipassana Pagoda!"
+      },
       "questions": [
         {
-          "key": "cleanliness",
-          "label": "How clean and well-maintained is the facility?",
-          "type": "rating_10",
-          "icon": "🧹",
+          "key": "spiritual_atmosphere",
+          "label": "How inspiring was the spiritual atmosphere?",
+          "type": "smiley_5",
+          "icon": "🏛️",
           "required": true,
           "order": 1
+        },
+        {
+          "key": "overall_experience",
+          "label": "How would you rate your overall experience?",
+          "type": "rating_10",
+          "icon": "⭐",
+          "required": true,
+          "order": 2
+        },
+        {
+          "key": "guided_tour_quality",
+          "label": "How was the guided tour service?",
+          "type": "rating_10",
+          "icon": "🎤",
+          "required": true,
+          "order": 3
         },
         {
           "key": "staff_behavior",
@@ -18,15 +39,23 @@
           "type": "rating_10",
           "icon": "👥",
           "required": true,
-          "order": 2
+          "order": 4
         },
         {
-          "key": "overall_experience",
-          "label": "Overall, how satisfied are you with your experience?",
+          "key": "cleanliness",
+          "label": "How clean and well-maintained is the facility?",
           "type": "rating_10",
-          "icon": "⭐",
+          "icon": "🧹",
           "required": true,
-          "order": 3
+          "order": 5
+        },
+        {
+          "key": "facilities_quality",
+          "label": "How would you rate the facilities (washrooms, drinking water)?",
+          "type": "rating_10",
+          "icon": "🚰",
+          "required": true,
+          "order": 6
         },
         {
           "key": "recommend",
@@ -34,67 +63,109 @@
           "type": "binary_yes_no",
           "icon": "👍",
           "required": true,
-          "order": 4
+          "order": 7
         }
       ]
     },
     {
       "code": "souvenir_store",
       "name": "Souvenir Store",
+      "description": "Spiritual books and merchandise",
+      "tablet_config": {
+        "primary_color": "#e74c3c",
+        "welcome_message": "Thank you for shopping with us!"
+      },
       "questions": [
+        {
+          "key": "product_variety",
+          "label": "How appealing is our product variety?",
+          "type": "smiley_5",
+          "icon": "🛍️",
+          "required": true,
+          "order": 1
+        },
+        {
+          "key": "overall_experience",
+          "label": "How would you rate your overall shopping experience?",
+          "type": "rating_10",
+          "icon": "⭐",
+          "required": true,
+          "order": 2
+        },
+        {
+          "key": "service_at_counter",
+          "label": "How was the service at the billing counter?",
+          "type": "rating_10",
+          "icon": "💳",
+          "required": true,
+          "order": 3
+        },
+        {
+          "key": "staff_assistance",
+          "label": "How helpful was the staff in finding products?",
+          "type": "rating_10",
+          "icon": "🤝",
+          "required": true,
+          "order": 4
+        },
+        {
+          "key": "store_cleanliness",
+          "label": "How clean and organized is our store?",
+          "type": "rating_10",
+          "icon": "✨",
+          "required": true,
+          "order": 5
+        },
         {
           "key": "product_quality",
           "label": "How would you rate the quality of products?",
           "type": "rating_10",
           "icon": "📦",
           "required": true,
-          "order": 1
+          "order": 6
         },
         {
-          "key": "pricing",
-          "label": "How competitive are the prices?",
+          "key": "value_for_money",
+          "label": "How do you rate the value for money?",
           "type": "rating_10",
           "icon": "💰",
           "required": true,
-          "order": 2
-        },
-        {
-          "key": "staff_helpfulness",
-          "label": "How helpful was the staff in finding what you need?",
-          "type": "rating_10",
-          "icon": "🤝",
-          "required": true,
-          "order": 3
-        },
-        {
-          "key": "overall_satisfaction",
-          "label": "How satisfied are you with your shopping experience?",
-          "type": "rating_10",
-          "icon": "😊",
-          "required": true,
-          "order": 4
+          "order": 7
         },
         {
           "key": "visit_again",
-          "label": "Will you visit again?",
+          "label": "Would you visit our store again?",
           "type": "binary_yes_no",
           "icon": "🔄",
           "required": true,
-          "order": 5
+          "order": 8
         }
       ]
     },
     {
       "code": "dpvc",
       "name": "DPVC - Dhamma Pattana Vipassana Centre",
+      "description": "Vipassana meditation courses",
+      "tablet_config": {
+        "primary_color": "#9b59b6",
+        "welcome_message": "Thank you for participating in the course!"
+      },
       "questions": [
         {
-          "key": "course_quality",
-          "label": "How would you rate the quality of the course?",
-          "type": "rating_10",
+          "key": "course_content",
+          "label": "How satisfied are you with the course content?",
+          "type": "smiley_5",
           "icon": "📚",
           "required": true,
           "order": 1
+        },
+        {
+          "key": "overall_experience",
+          "label": "How would you rate your overall course experience?",
+          "type": "rating_10",
+          "icon": "⭐",
+          "required": true,
+          "order": 2
         },
         {
           "key": "instructor_effectiveness",
@@ -102,15 +173,23 @@
           "type": "rating_10",
           "icon": "👨‍🏫",
           "required": true,
-          "order": 2
+          "order": 3
         },
         {
-          "key": "facility_comfort",
-          "label": "How comfortable was the accommodation/facility?",
+          "key": "meditation_hall_quality",
+          "label": "How was the meditation hall environment?",
+          "type": "rating_10",
+          "icon": "🧘",
+          "required": true,
+          "order": 4
+        },
+        {
+          "key": "accommodation_comfort",
+          "label": "How comfortable was the accommodation?",
           "type": "rating_10",
           "icon": "🛏️",
           "required": true,
-          "order": 3
+          "order": 5
         },
         {
           "key": "food_quality",
@@ -118,15 +197,15 @@
           "type": "rating_10",
           "icon": "🍲",
           "required": true,
-          "order": 4
+          "order": 6
         },
         {
-          "key": "overall_experience",
-          "label": "Overall, how transformative was your experience?",
-          "type": "smiley_5",
-          "icon": "😄",
+          "key": "facility_cleanliness",
+          "label": "How clean were the facilities?",
+          "type": "rating_10",
+          "icon": "✨",
           "required": true,
-          "order": 5
+          "order": 7
         },
         {
           "key": "will_return",
@@ -134,75 +213,109 @@
           "type": "binary_yes_no",
           "icon": "🙏",
           "required": true,
-          "order": 6
+          "order": 8
         }
       ]
     },
     {
       "code": "dhammalaya",
       "name": "Dhammalaya",
+      "description": "Meditation and study facility",
+      "tablet_config": {
+        "primary_color": "#27ae60",
+        "welcome_message": "Thank you for visiting Dhammalaya!"
+      },
       "questions": [
         {
-          "key": "ambiance",
-          "label": "How peaceful is the environment/ambiance?",
-          "type": "rating_10",
+          "key": "peaceful_ambiance",
+          "label": "How peaceful is the environment?",
+          "type": "smiley_5",
           "icon": "🧘",
           "required": true,
           "order": 1
         },
         {
-          "key": "facilities_quality",
-          "label": "How well-maintained are the facilities?",
+          "key": "overall_experience",
+          "label": "How would you rate your overall experience?",
           "type": "rating_10",
-          "icon": "🏛️",
+          "icon": "⭐",
           "required": true,
           "order": 2
         },
         {
-          "key": "resource_availability",
-          "label": "How easily available are study materials/resources?",
+          "key": "facilities_maintenance",
+          "label": "How well-maintained are the facilities?",
           "type": "rating_10",
-          "icon": "📖",
+          "icon": "🏛️",
           "required": true,
           "order": 3
         },
         {
-          "key": "support_staff",
-          "label": "How supportive was the staff?",
+          "key": "study_resources",
+          "label": "How available are study materials and resources?",
           "type": "rating_10",
-          "icon": "🤝",
+          "icon": "📖",
           "required": true,
           "order": 4
         },
         {
-          "key": "overall_satisfaction",
-          "label": "Overall satisfaction with your visit",
-          "type": "smiley_5",
-          "icon": "😊",
+          "key": "support_staff",
+          "label": "How supportive and helpful was the staff?",
+          "type": "rating_10",
+          "icon": "🤝",
           "required": true,
           "order": 5
+        },
+        {
+          "key": "seating_comfort",
+          "label": "How comfortable were the seating arrangements?",
+          "type": "rating_10",
+          "icon": "🪑",
+          "required": true,
+          "order": 6
+        },
+        {
+          "key": "visit_again",
+          "label": "Would you visit Dhammalaya again?",
+          "type": "binary_yes_no",
+          "icon": "🔄",
+          "required": true,
+          "order": 7
         }
       ]
     },
     {
       "code": "food_court",
       "name": "Food Court",
+      "description": "Dining and refreshments",
+      "tablet_config": {
+        "primary_color": "#f39c12",
+        "welcome_message": "Thank you for dining with us!"
+      },
       "questions": [
         {
-          "key": "food_taste",
-          "label": "How would you rate the taste of the food?",
-          "type": "rating_10",
+          "key": "food_taste_quality",
+          "label": "How was the taste of the food?",
+          "type": "smiley_5",
           "icon": "🍜",
           "required": true,
           "order": 1
         },
         {
-          "key": "food_freshness",
-          "label": "How fresh was the food?",
+          "key": "overall_experience",
+          "label": "How would you rate your overall dining experience?",
           "type": "rating_10",
-          "icon": "🥗",
+          "icon": "⭐",
           "required": true,
           "order": 2
+        },
+        {
+          "key": "service_at_counter",
+          "label": "How was the service at the counter?",
+          "type": "rating_10",
+          "icon": "💳",
+          "required": true,
+          "order": 3
         },
         {
           "key": "service_speed",
@@ -210,15 +323,23 @@
           "type": "rating_10",
           "icon": "⚡",
           "required": true,
-          "order": 3
+          "order": 4
         },
         {
-          "key": "cleanliness",
+          "key": "food_court_cleanliness",
           "label": "How clean is the food court area?",
           "type": "rating_10",
           "icon": "✨",
           "required": true,
-          "order": 4
+          "order": 5
+        },
+        {
+          "key": "food_freshness",
+          "label": "How fresh was the food served?",
+          "type": "rating_10",
+          "icon": "🥗",
+          "required": true,
+          "order": 6
         },
         {
           "key": "value_for_money",
@@ -226,15 +347,15 @@
           "type": "rating_10",
           "icon": "💵",
           "required": true,
-          "order": 5
+          "order": 7
         },
         {
           "key": "return_again",
-          "label": "Would you visit again?",
+          "label": "Would you dine here again?",
           "type": "binary_yes_no",
-          "icon": "👍",
+          "icon": "rating_10",
           "required": true,
-          "order": 6
+          "order": 8
         }
       ]
     }
